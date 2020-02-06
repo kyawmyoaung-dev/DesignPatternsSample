@@ -13,7 +13,8 @@ namespace DesignPatternsSample
     {
         static void Main(string[] args)
         {
-            EmployeeBusinessLogic employeeBusinessLogic = new EmployeeBusinessLogic();
+            //constructor  dependency injeciton
+            EmployeeBusinessLogic employeeBusinessLogic = new EmployeeBusinessLogic(new EmployeeDataAccess());
 
             var employees = employeeBusinessLogic.GetEmployees();
 

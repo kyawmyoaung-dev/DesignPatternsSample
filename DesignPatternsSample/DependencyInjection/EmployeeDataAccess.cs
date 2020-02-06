@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPatternsSample.DependencyInjection
 {
-    public class EmployeeDataAccess
+    public class EmployeeDataAccess : IEmployeeDataAccess
     {
 
         public List<Employee> GetEmployees()

@@ -8,5 +8,6 @@ namespace DesignPatternsSample.DependencyInjection
 {
     public interface IEmployeeDataAccess
     {
+        List<Employee> GetEmployees();
     }
 }

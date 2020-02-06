@@ -8,15 +8,15 @@ namespace DesignPatternsSample.DependencyInjection
 {
     public class EmployeeBusinessLogic
     {
-        private EmployeeDataAccess dataAccess;
-        public EmployeeBusinessLogic()
+        private IEmployeeDataAccess _dataAccess;
+        public EmployeeBusinessLogic(IEmployeeDataAccess dataAccess)
         {
-            dataAccess = new EmployeeDataAccess();
+            _dataAccess = dataAccess;
         }
 
         public List<Employee> GetEmployees()
         {
-            return dataAccess.GetEmployees();
+            return _dataAccess.GetEmployees();
         }
     }
 }
