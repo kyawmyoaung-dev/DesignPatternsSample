@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreationalDesignPatterns\FactoryDesignPattern\FactoryPayroll.cs" />
+    <Compile Include="CreationalDesignPatterns\FactoryDesignPattern\IPayroll.cs" />
+    <Compile Include="CreationalDesignPatterns\FactoryDesignPattern\PartTimePayroll.cs" />
+    <Compile Include="CreationalDesignPatterns\FactoryDesignPattern\PermanentPayroll.cs" />
+    <Compile Include="CreationalDesignPatterns\FactoryDesignPattern\ProbationPayroll.cs" />
     <Compile Include="DependencyInjection\Employee.cs" />
     <Compile Include="DependencyInjection\EmployeeDataAccess.cs" />
     <Compile Include="DependencyInjection\IEmployeeDataAccess.cs" />
